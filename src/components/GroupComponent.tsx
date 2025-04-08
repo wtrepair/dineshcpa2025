@@ -1,5 +1,5 @@
 import { FunctionComponent } from "react";
-import Badge from "./Badge";
+// import Badge from "./Badge";
 import BlogCard from "./BlogCard";
 
 export type GroupComponentType = {

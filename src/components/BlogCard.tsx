@@ -1,5 +1,4 @@
 import { FunctionComponent, useMemo, type CSSProperties } from "react";
-import Badge from "./Badge";
 import { useNavigate } from "react-router-dom";
 
 
@@ -29,11 +28,6 @@ const BlogCard: FunctionComponent<BlogCardType> = ({
   title,
   propHeight,
   preview,
-  small,
-  badgeText,
-  showText,
-  showIcon,
-  showCloseIcon,
   cardBodyFlex,
   contentFlex,
   blogId,

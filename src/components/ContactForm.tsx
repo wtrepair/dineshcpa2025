@@ -1,6 +1,13 @@
 import { FunctionComponent, useEffect, useState } from "react";
 import { handleFormSubmit } from "./handleFormSubmit";
 
+interface CountryData {
+  name: {
+    common: string;
+  };
+  languages?: { [key: string]: string };
+}
+
 export type ContactType = {
     className?: string;
 };
@@ -12,12 +19,12 @@ const ContactForm: FunctionComponent<ContactType> = ({ className = "" }) => {
     useEffect(() => {
         fetch("https://restcountries.com/v3.1/all")
             .then((response) => response.json())
-            .then((data) => {
-                setCountries(data.map((country: any) => country.name.common).sort());
+            .then((data: CountryData[]) => {
+                setCountries(data.map((country) => country.name.common).sort());
                 setLanguages(
                     [
                         ...new Set(
-                            data.flatMap((country: any) =>
+                            data.flatMap((country) =>
                                 Object.values(country.languages || {})
                             ) as string[]
                         ),

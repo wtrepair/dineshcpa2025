@@ -1,6 +1,4 @@
-import { FunctionComponent, useEffect, useState } from "react";
-import { handleFormSubmit } from "./handleFormSubmit";
-import ContactForm from "./ContactForm";
+import { FunctionComponent } from "react";
 
 export type ContactType = {
   className?: string;

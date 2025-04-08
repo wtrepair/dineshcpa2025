@@ -19,7 +19,6 @@ export type RowType = {
   propWidth?: string;
   propBorderRadius?: string;
   propHeight?: string;
-  propTextTransform?: string;
   propColor?: string;
   propAlignSelf?: string;
   buttonFlex?: string;
@@ -50,7 +49,6 @@ const Row: FunctionComponent<RowType> = ({
   propWidth,
   propBorderRadius,
   propHeight,
-  propTextTransform,
   propColor,
   propAlignSelf,
   buttonFlex,
