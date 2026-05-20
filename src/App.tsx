@@ -6,6 +6,7 @@ import {
   useLocation,
 } from "react-router-dom";
 import Button3 from "./components/Button3";
+import { DemoRoute } from "./components/DemoSvgPage";
 
 function App() {
   const action = useNavigationType();
@@ -46,6 +47,8 @@ function App() {
   return (
     <Routes>
       <Route path="/" element={<Button3 />} />
+      <Route path="/demo1" element={<DemoRoute />} />
+      <Route path="/demo1/:page" element={<DemoRoute />} />
     </Routes>
   );
 }

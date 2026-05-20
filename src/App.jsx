@@ -9,6 +9,7 @@ import DineshCPA from "./components/DineshCPA";
 import BlogPage1 from "./components/BlogPage1";
 import BlogPage2 from "./components/BlogPage2";
 import BlogPage3 from "./components/BlogPage3";
+import { DemoRoute } from "./components/DemoSvgPage";
 
 function App() {
   const action = useNavigationType();
@@ -49,6 +50,8 @@ function App() {
   return (
     <Routes>
       <Route path="/" element={<DineshCPA />} />
+      <Route path="/demo1" element={<DemoRoute />} />
+      <Route path="/demo1/:page" element={<DemoRoute />} />
       <Route path="/blog/1" element={<BlogPage1 />} />
       <Route path="/blog/2" element={<BlogPage2 />} />
       <Route path="/blog/3" element={<BlogPage3 />} />
