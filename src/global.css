@@ -62,6 +62,24 @@ body {
   height: 100%;
 }
 
+.demo-hero-header {
+  position: absolute;
+  top: 0;
+  z-index: 2;
+  pointer-events: none;
+  transition: opacity 120ms linear;
+}
+
+.demo-hero-header-svg {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.demo-hero-header .demo-hotspot {
+  pointer-events: auto;
+}
+
 .demo-hotspot {
   position: absolute;
   z-index: 3;

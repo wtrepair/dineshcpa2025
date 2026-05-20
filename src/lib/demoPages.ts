@@ -26,6 +26,7 @@ export type DemoPageData = {
   hotspots: DemoHotspot[];
   expansions: DemoExpansion[];
   heroIntro?: DemoExpansion;
+  contentStartTop?: number;
 };
 
 const headerHotspots: DemoHotspot[] = [
@@ -77,6 +78,7 @@ export const demoPages: DemoPageData[] = [
       { label: "Client testimonial panel", left: 0.0, top: 77.1, width: 100.0, height: 12.1 },
     ],
     heroIntro: { label: "Dinesh CPA hero", left: 7.3, top: 2.05, width: 85.4, height: 13.7 },
+    contentStartTop: 18.15,
   },
   {
     id: "2",
