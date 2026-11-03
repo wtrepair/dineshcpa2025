@@ -32,7 +32,7 @@
     "eslint": "^8.57.1",
     "eslint-plugin-react-hooks": "^4.6.0",
     "eslint-plugin-react-refresh": "^0.4.6",
-    "postcss": "^8.4.16",
+    "postcss": "^8.5.28",
     "tailwindcss": "^3.1.8",
     "vite": "^8.3.1"
   },
@@ -57,5 +57,10 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "overrides": {
+    "source-map-js": "^1.2.2",
+    "postcss": "$postcss",
+    "@grpc/grpc-js": "^1.14.5"
   }
 }
